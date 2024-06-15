@@ -24,7 +24,6 @@ const Sidebar = ({ user }: SidebarProps) => {
           />
           <h1 className="sidebar-logo">Finwiz</h1>
         </Link>
-
         {sidebarLinks.map((item) => {
           const isActive =
             pathname === item.route || pathname.startsWith(`${item.route}/`)
@@ -51,7 +50,7 @@ const Sidebar = ({ user }: SidebarProps) => {
             </Link>
           )
         })}
-
+        hello sidebar
         <PlaidLink user={user} />
       </nav>
 
